@@ -362,7 +362,7 @@ margin:0 auto;
   cursor: pointer;
 }
 
-.store h2{
+.store h2, .question h2{
   margin-top: 40px;
   height: 36px;
   font-size:24px;
@@ -373,7 +373,7 @@ margin:0 auto;
   }
 }
 
-.store {
+.store , .question{
   padding:0px 12px;
   @include rwd($phone){
     padding:0px 36px;
@@ -381,7 +381,7 @@ margin:0 auto;
 }
 
 
-.store .optionArea{
+.store .optionArea, .questionContent{
   margin-top: 24px;
 }
 .store select{
@@ -490,3 +490,21 @@ margin:0 auto;
 
 }
 
+.questionContent h4{
+  margin-top: 24px;
+  line-height: 30px;
+  font-size:20px;
+  font-weight: bold;
+}
+
+.questionContent h4:not(:first-child){
+  @include rwd($phone){
+    margin-top: 32px;
+  }
+}
+
+.questionContent p{
+  margin-top: 8px;
+  line-height: 24px;
+  font-size:16px;
+}

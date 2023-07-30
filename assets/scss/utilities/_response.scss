@@ -370,6 +370,7 @@ margin:0 auto;
   @include rwd($phone){
     line-height: 72px;
     font-size: 48px;
+    height: 100%;
   }
 }
 

@@ -105,6 +105,9 @@ $small: 375px;
   @include rwd($phone) {
     margin-left: 36px;
   }
+  @include rwd($tablet){
+    margin-left: 0px;
+  }
   // font-size:16px
 }
 
@@ -121,8 +124,8 @@ $small: 375px;
   }
 }
 
-.header .container ul li {
-  margin-right: 12px;
+.header .container ul li:not(:last-child) {
+  margin-right: 48px;
 }
 
 .headerMobile{
@@ -362,7 +365,7 @@ margin:0 auto;
   cursor: pointer;
 }
 
-.store h2, .question h2{
+.store h2, .question h2, .blog h2{
   margin-top: 40px;
   height: 36px;
   font-size:24px;
@@ -371,6 +374,19 @@ margin:0 auto;
     line-height: 72px;
     font-size: 48px;
     height: 100%;
+  }
+}
+
+.store section:first-child, .question section:first-child, .blog section:first-child{
+  margin-left: 12px;
+  margin-top: 40px;
+  @include rwd($phone){
+    margin-left: 36px;
+    margin-top: 80px;
+  }
+  @include rwd($tablet){
+    margin-left: 0px;
+    margin-top: 96px;
   }
 }
 
@@ -509,3 +525,81 @@ margin:0 auto;
   line-height: 24px;
   font-size:16px;
 }
+
+.blogSearch {
+  display:none;
+  @include rwd($phone){
+    display:block;
+  }
+}
+
+.blog .container ul {
+  margin-left: 12px;
+  @include rwd($phone){
+    margin-left: 36px;
+  }
+  @include rwd($tablet){
+    margin-left: 0px;;
+  }
+}
+
+.blogContent h3{
+  line-height: 48px;
+  font-size: 32px;
+  color:#650300;
+}
+
+.blogContent p{
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.blogContent small{
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.blogContent article{
+  margin-top: 4px;
+  color:#555555;
+  @include rwd($phone){
+    margin-top: 16px;
+  }
+}
+
+.blogContent ul li:first-child {
+  margin-top: 24px;
+  @include rwd($phone){
+    margin-top: 40px;
+  }
+  @include rwd($tablet){
+    margin-top: 32px;
+  }
+}
+
+.blogContent ul li:not(:first-child){
+  margin-top: 24px;
+  @include rwd($tablet){
+    margin-top: 60px;
+  }
+}
+
+.blogContent li img, .blogContent .listContent{
+  width: 100%;
+  @include rwd($phone){
+    width: 50%;
+  }
+  }
+
+// .blogContent .listContent {
+//   padding:0px 36px;
+//   }
+  .blogContent ul li{
+    flex-wrap:wrap;
+    padding:0px 36px;
+    
+    @include rwd($phone){
+      flex-wrap:nowrap;
+      padding:0px;
+    }
+  }

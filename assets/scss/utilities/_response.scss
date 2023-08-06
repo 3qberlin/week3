@@ -802,3 +802,61 @@ margin:0 auto;
 
   }
 }
+
+.sectionBanner{
+  background-color: #FBF2F2;
+  height: 1150px;
+  @include rwd($phone){
+      height:720px;
+  }
+  @include rwd($web){
+    height: 488px;
+  }
+
+}
+
+.sectionIntro {
+  padding-top: 40px;
+  @include rwd($phone){
+    padding-top: 80px;
+  }
+}
+
+.sectionIntro h3{
+  line-height: 36px;
+  font-size: 24px;
+  color:#650300;
+  @include rwd($phone){
+    line-height: 72px;
+    font-size: 48px;
+  }
+}
+
+.sectionBanner ul{
+  flex-wrap:wrap;
+  padding:0px 12px;
+  @include rwd($phone){
+    flex-wrap:wrap;
+  }
+  @include rwd($web){
+    padding:0px;
+    flex-wrap:nowrap;
+  }
+}
+
+.sectionBanner ul li{
+  width: 100%;
+  @include rwd($phone){
+    width: 50%;
+  }
+  @include rwd($web){
+    width: 23%;
+  }
+}
+
+.sectionBanner ul li img{
+  margin-top: 32px;
+  @include rwd($tablet){
+    margin-top: 24px;
+  }
+}

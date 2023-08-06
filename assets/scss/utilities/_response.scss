@@ -230,16 +230,20 @@ footer .copyright {
 }
 
 .product section h2 {
-  font-size: 36px;
+  font-size: 24px;
+  line-height: 36px;
   @include rwd($phone) {
     font-size: 42px;
+    line-height: 63px;
   }
 }
 
 .product section p {
-  font-size: 30px;
+  font-size: 24px;
+  line-height: 36px;
   @include rwd($phone) {
-    font-size: 36px;
+    font-size: 32px;
+    line-height: 48px;
   }
 }
 
@@ -543,10 +547,62 @@ margin:0 auto;
   }
 }
 
+.blog .container ul li:not(:first-child){
+  margin-left:25px;
+  @include rwd($phone){
+    margin-left: 48px;;
+  }
+}
+
+.blogContent article, .blogContent a{
+  display:none;
+  @include rwd($phone){
+    display:block;
+  }
+}
+
+
+
+.blog .container ul li a{
+  font-size: 16px;
+  line-height: 24px;
+  @include rwd($phone){
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.blog img{
+  cursor: pointer;
+}
+
+.blogContent li{
+  gap:0px;
+  @include rwd($phone)
+  {
+    gap:24px;
+  }
+}
+
+.blog .container{
+  display:none;
+  @include rwd($phone){
+    display:block;
+    display:flex;
+  }
+}
+
 .blogContent h3{
-  line-height: 48px;
-  font-size: 32px;
+  margin-top: 8px;
+  line-height: 36px;
+  font-size: 24px;
   color:#650300;
+  @include rwd($phone){
+    line-height: 48px;
+    font-size: 32px;
+  }
+  
+  
 }
 
 .blogContent p{
@@ -596,7 +652,11 @@ margin:0 auto;
 //   }
   .blogContent ul li{
     flex-wrap:wrap;
-    padding:0px 36px;
+    padding:0px 25px;
+    @include rwd($phone){
+
+      padding:0px 36px;
+    }
     
     @include rwd($phone){
       flex-wrap:nowrap;

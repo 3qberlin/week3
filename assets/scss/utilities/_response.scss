@@ -537,7 +537,7 @@ margin:0 auto;
   }
 }
 
-.blog .container ul {
+.blog .container ul, .special .container ul, .specialContent {
   margin-left: 12px;
   @include rwd($phone){
     margin-left: 36px;
@@ -547,7 +547,7 @@ margin:0 auto;
   }
 }
 
-.blog .container ul li:not(:first-child){
+.blog .container ul li:not(:first-child), .special .container ul li:not(:first-child){
   margin-left:25px;
   @include rwd($phone){
     margin-left: 48px;;
@@ -563,7 +563,7 @@ margin:0 auto;
 
 
 
-.blog .container ul li a{
+.blog .container ul li a, .special .container ul li a{
   font-size: 16px;
   line-height: 24px;
   @include rwd($phone){
@@ -572,7 +572,7 @@ margin:0 auto;
   }
 }
 
-.blog img{
+.blog img, .special img{
   cursor: pointer;
 }
 
@@ -623,6 +623,10 @@ margin:0 auto;
   }
 }
 
+.specialContent ul li article p{
+  font-weight: normal;
+}
+
 .blogContent ul li:first-child {
   margin-top: 24px;
   @include rwd($phone){
@@ -663,3 +667,98 @@ margin:0 auto;
       padding:0px;
     }
   }
+
+
+.breadcrumb h6{
+  margin-top: 16px;
+  @include rwd($small){
+    margin-top: 8px;
+  }
+  @include rwd($tablet){
+    margin-top: 24px;
+  }
+}
+
+.breadcrumb,.tags {
+  padding:0px 12px;
+  @include rwd($phone){
+    padding:0px;
+  }
+}
+
+.tags{
+  font-weight: 700;
+}
+
+.special ul {
+  display:flex;
+  justify-content:space-between;
+  @include rwd($phone){
+    justify-content:flex-start;
+  }
+}
+
+.specialContent ul li span, .specialContent ul li p {
+  font-weight: 700;
+}
+
+.specialContent h3 a{
+  line-height: 36px;
+  font-size: 24px;
+  @include rwd($phone){
+    line-height: 72px;
+    font-size: 48px;
+  }
+}
+
+.specialContent ul li p{
+  line-height: 21px;
+  font-size: 16px;
+  @include rwd($phone){
+    line-height: 36px;
+    font-size: 24px;
+  }
+}
+
+.specialContent img{
+  margin-top: 16px;
+  @include rwd($small){
+    margin-top: 24px;
+  }
+  @include rwd($phone){
+    margin-top: 16px;
+  }
+}
+
+.specialContent article{
+  margin-top: 8px;
+  @include rwd($small){
+    margin-top: 16px;
+  }
+  @include rwd($phone){
+    margin-top: 8px;
+  }
+}
+
+.tagsAside{
+  display:none;
+  @include rwd($tablet){
+    display:block;
+  }
+}
+
+.specialContent ul:first-child{
+  padding:0px 12px 0px 0px;
+  width: 100%;
+  @include rwd($phone){
+      width: 70%;
+  }
+}
+
+.specialPrevNext{
+  display:none;
+  @include rwd($phone){
+    display:block;
+    display:flex;
+  }
+}

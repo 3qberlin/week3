@@ -21,19 +21,18 @@ $small: 375px;
 
 .product-items li {
   width: 100%;
-  margin:0 auto;
+  margin: 0 auto;
   @include rwd($phone) {
     width: 48%;
-    
   }
   @include rwd($tablet) {
     width: 23%;
   }
 }
 
-.product img{
-  margin:0 auto;
-  width: 100%;;
+.product img {
+  margin: 0 auto;
+  width: 100%;
 }
 
 .productBanner .phone {
@@ -105,7 +104,7 @@ $small: 375px;
   @include rwd($phone) {
     margin-left: 36px;
   }
-  @include rwd($tablet){
+  @include rwd($tablet) {
     margin-left: 0px;
   }
   // font-size:16px
@@ -128,18 +127,18 @@ $small: 375px;
   margin-right: 48px;
 }
 
-.headerMobile{
-  display:block;
-  @include rwd($phone){
-    display:none;
+.headerMobile {
+  display: block;
+  @include rwd($phone) {
+    display: none;
   }
 }
 
 .header ul {
-  display:none;
-  @include rwd($phone){
-    display:block;
-    display:flex;
+  display: none;
+  @include rwd($phone) {
+    display: block;
+    display: flex;
   }
 }
 
@@ -247,527 +246,527 @@ footer .copyright {
   }
 }
 
-.connect{
-  @include rwd($tablet){
-    display:none;
+.connect {
+  @include rwd($tablet) {
+    display: none;
   }
 }
 
 .Navmenu {
-  display:none;
-  @include rwd($tablet){
-    display:block;
-    display:flex;
+  display: none;
+  @include rwd($tablet) {
+    display: block;
+    display: flex;
   }
 }
 
-.connect a~a{
+.connect a ~ a {
   line-height: 24px;
-  font-size:16px;
+  font-size: 16px;
   margin-left: 11px;
-  @include rwd($phone){
+  @include rwd($phone) {
     line-height: 54px;
-    font-size:36px;
+    font-size: 36px;
   }
 }
 
-.footerIcons img{
+.footerIcons img {
   width: 24px;
-  height:24px;
-  @include rwd($phone){
+  height: 24px;
+  @include rwd($phone) {
     width: 40px;
-  height:40px;
+    height: 40px;
   }
 }
 
 .footerIcons {
   padding-top: 0px;
-  @include rwd($phone){
+  @include rwd($phone) {
     padding-top: 48px;
   }
 }
-.connect span{
+.connect span {
   line-height: 18px;
-  font-size:18px;
-  @include rwd($phone){
-    font-size:36px;
+  font-size: 18px;
+  @include rwd($phone) {
+    font-size: 36px;
   }
 }
 
-
-.rwd{
-  display:none;
-  @include rwd($phone){
-    display:block;
+.rwd {
+  display: none;
+  @include rwd($phone) {
+    display: block;
     // display:flex;
   }
 }
 
-.footerIcons{
+.footerIcons {
   margin-top: 0px;
 }
 
-.copyright{
-  flex-wrap:wrap;
-  @include rwd($phone){
-    flex-wrap:nowrap;
+.copyright {
+  flex-wrap: wrap;
+  @include rwd($phone) {
+    flex-wrap: nowrap;
   }
 }
 
-.copyright h5{
+.copyright h5 {
   width: 100%;
-  @include rwd($phone){
-    width:auto;
+  @include rwd($phone) {
+    width: auto;
   }
 }
 
 .sunGlass li {
-width:100%;
-margin:0 auto;
-// @include rwd($small){
-//   width:45%;
-// }
-@include rwd($web){
-  width: 31%;
-}
+  width: 100%;
+  margin: 0 auto;
+  // @include rwd($small){
+  //   width:45%;
+  // }
+  @include rwd($web) {
+    width: 31%;
+  }
 }
 
-.content{
+.content {
   padding: 0px 12px;
-  @include rwd($phone){
-    padding:0px 36px;
+  @include rwd($phone) {
+    padding: 0px 36px;
   }
 }
 
-.sunGlass li p{
+.sunGlass li p {
   line-height: 24px;
-  font-size:16px;
+  font-size: 16px;
 }
 
-.sunGlasses > section h2{
-
+.sunGlasses > section h2 {
   line-height: 36px;
-  font-size:24px;
-  @include rwd($phone){
+  font-size: 24px;
+  @include rwd($phone) {
     line-height: 63px;
-    font-size:42px;
+    font-size: 42px;
   }
- 
 }
 
-.sunGlasses > section p{
+.sunGlasses > section p {
   line-height: 36px;
-  font-size:24px;
-  @include rwd($phone){
+  font-size: 24px;
+  @include rwd($phone) {
     line-height: 48px;
-    font-size:32px;
+    font-size: 32px;
   }
-  
 }
 
-.sunGlasses img{
+.sunGlasses img {
   cursor: pointer;
 }
 
-.store h2, .question h2, .blog h2{
+.store h2,
+.question h2,
+.blog h2 {
   margin-top: 40px;
   height: 36px;
-  font-size:24px;
+  font-size: 24px;
   font-weight: bold;
-  @include rwd($phone){
+  @include rwd($phone) {
     line-height: 72px;
     font-size: 48px;
     height: 100%;
   }
 }
 
-.store section:first-child, .question section:first-child, .blog section:first-child{
+.store section:first-child,
+.question section:first-child,
+.blog section:first-child {
   margin-left: 12px;
   margin-top: 40px;
-  @include rwd($phone){
+  @include rwd($phone) {
     margin-left: 36px;
     margin-top: 80px;
   }
-  @include rwd($tablet){
+  @include rwd($tablet) {
     margin-left: 0px;
     margin-top: 96px;
   }
 }
 
-.store , .question{
-  padding:0px 12px;
-  @include rwd($phone){
-    padding:0px 36px;
+.store,
+.question {
+  padding: 0px 12px;
+  @include rwd($phone) {
+    padding: 0px 36px;
   }
 }
 
-
-.store .optionArea, .questionContent{
+.store .optionArea,
+.questionContent {
   margin-top: 24px;
 }
-.store select{
-  width:100%;
-  @include rwd($phone){
-    width:26.5%;
+.store select {
+  width: 100%;
+  @include rwd($phone) {
+    width: 26.5%;
   }
 }
 
-.store h3{
+.store h3 {
   line-height: 24px;
-  font-size:16px;
+  font-size: 16px;
 }
 
-.storeCard h3{
+.storeCard h3 {
   line-height: 36px;
   font-size: 24px;
 }
 
-.storeConnect p{
+.storeConnect p {
   margin-left: 11px;
 }
 
-.storeConnect img{
+.storeConnect img {
   width: 18px;
   height: 18px;
   line-height: 24px;
 }
 
-.storeCard ul li{
+.storeCard ul li {
   margin-top: 24px;
 }
 
-.storeCard li{
+.storeCard li {
   width: 100%;
-  margin:0 auto;
-  
+  margin: 0 auto;
+
   // @include rwd($small){
   //   width:48%;
   // }
-  @include rwd($phone){
+  @include rwd($phone) {
     width: 31%;
-    
   }
 }
 
 .storeConnect {
-  padding:16px 24px 16px 27px;
+  padding: 16px 24px 16px 27px;
 }
 
-.storeConnect div:not(:first-child){
+.storeConnect div:not(:first-child) {
   margin-top: 8px;
 }
 
-.store section h2{
-  @include rwd($phone){
+.store section h2 {
+  @include rwd($phone) {
     line-height: 72px;
-    height: 100%;;
+    height: 100%;
   }
 }
 
-.store section h3{
-  @include rwd($phone){
-    line-height: 36px;
-    font-size:24px;
-  }
-}
-
-.store section select{
-  @include rwd($phone){
-    line-height: 26px;
-    font-size:18px;
-  }
-}
-
-.optionArea select{
-  margin-left: 8px;
-  @include rwd($phone){
-    margin-left: 16px;
-  }
-}
-
-.store img{
-  cursor: pointer;
-}
-
-.storeCardSelected img{
-  margin-top:24px;
-  @include rwd($tablet){
-    margin-top:0px;
-  }
-}
-
-.storeCardSelected ul li:nth-child(1){
-  margin:0 auto;
-  @include rwd($tablet){
-    width: 36%;
-  }
-
-}
-
-.storeCardSelected ul li:nth-child(2){
-  @include rwd($phone){
-    width: 60%;
-  }
-
-}
-
-.questionContent h4{
-  margin-top: 24px;
-  line-height: 30px;
-  font-size:20px;
-  font-weight: bold;
-}
-
-.questionContent h4:not(:first-child){
-  @include rwd($phone){
-    margin-top: 32px;
-  }
-}
-
-.questionContent p{
-  margin-top: 8px;
-  line-height: 24px;
-  font-size:16px;
-}
-
-.blogSearch {
-  display:none;
-  @include rwd($phone){
-    display:block;
-  }
-}
-
-.blog .container ul, .special .container ul, .specialContent {
-  margin-left: 12px;
-  @include rwd($phone){
-    margin-left: 36px;
-  }
-  @include rwd($tablet){
-    margin-left: 0px;;
-  }
-}
-
-.blog .container ul li:not(:first-child), .special .container ul li:not(:first-child){
-  margin-left:25px;
-  @include rwd($phone){
-    margin-left: 48px;;
-  }
-}
-
-.blogContent article, .blogContent a{
-  display:none;
-  @include rwd($phone){
-    display:block;
-  }
-}
-
-
-
-.blog .container ul li a, .special .container ul li a{
-  font-size: 16px;
-  line-height: 24px;
-  @include rwd($phone){
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.blog img, .special img{
-  cursor: pointer;
-}
-
-.blogContent li{
-  gap:0px;
-  @include rwd($phone)
-  {
-    gap:24px;
-  }
-}
-
-.blog .container{
-  display:none;
-  @include rwd($phone){
-    display:block;
-    display:flex;
-  }
-}
-
-.blogContent h3{
-  margin-top: 8px;
-  line-height: 36px;
-  font-size: 24px;
-  color:#650300;
-  @include rwd($phone){
-    line-height: 48px;
-    font-size: 32px;
-  }
-  
-  
-}
-
-.blogContent p{
-  line-height: 30px;
-  font-size: 20px;
-}
-
-.blogContent small{
-  line-height: 24px;
-  font-size: 16px;
-}
-
-.blogContent article{
-  margin-top: 4px;
-  color:#555555;
-  @include rwd($phone){
-    margin-top: 16px;
-  }
-}
-
-.specialContent ul li article p{
-  font-weight: normal;
-}
-
-.blogContent ul li:first-child {
-  margin-top: 24px;
-  @include rwd($phone){
-    margin-top: 40px;
-  }
-  @include rwd($tablet){
-    margin-top: 32px;
-  }
-}
-
-.blogContent ul li:not(:first-child){
-  margin-top: 24px;
-  @include rwd($tablet){
-    margin-top: 60px;
-  }
-}
-
-.blogContent li img, .blogContent .listContent{
-  width: 100%;
-  @include rwd($phone){
-    width: 50%;
-  }
-  }
-
-// .blogContent .listContent {
-//   padding:0px 36px;
-//   }
-  .blogContent ul li{
-    flex-wrap:wrap;
-    padding:0px 25px;
-    @include rwd($phone){
-
-      padding:0px 36px;
-    }
-    
-    @include rwd($phone){
-      flex-wrap:nowrap;
-      padding:0px;
-    }
-  }
-
-
-.breadcrumb h6{
-  margin-top: 16px;
-  @include rwd($small){
-    margin-top: 8px;
-  }
-  @include rwd($tablet){
-    margin-top: 24px;
-  }
-}
-
-.breadcrumb,.tags {
-  padding:0px 12px;
-  @include rwd($phone){
-    padding:0px;
-  }
-}
-
-.tags{
-  font-weight: 700;
-}
-
-.special ul {
-  display:flex;
-  justify-content:space-between;
-  @include rwd($phone){
-    justify-content:flex-start;
-  }
-}
-
-.specialContent ul li span, .specialContent ul li p {
-  font-weight: 700;
-}
-
-.specialContent h3 a{
-  line-height: 36px;
-  font-size: 24px;
-  @include rwd($phone){
-    line-height: 72px;
-    font-size: 48px;
-  }
-}
-
-.specialContent ul li p{
-  line-height: 21px;
-  font-size: 16px;
-  @include rwd($phone){
+.store section h3 {
+  @include rwd($phone) {
     line-height: 36px;
     font-size: 24px;
   }
 }
 
-.specialContent img{
-  margin-top: 16px;
-  @include rwd($small){
-    margin-top: 24px;
+.store section select {
+  @include rwd($phone) {
+    line-height: 26px;
+    font-size: 18px;
   }
-  @include rwd($phone){
+}
+
+.optionArea select {
+  margin-left: 8px;
+  @include rwd($phone) {
+    margin-left: 16px;
+  }
+}
+
+.store img {
+  cursor: pointer;
+}
+
+.storeCardSelected img {
+  margin-top: 24px;
+  @include rwd($tablet) {
+    margin-top: 0px;
+  }
+}
+
+.storeCardSelected ul li:nth-child(1) {
+  margin: 0 auto;
+  @include rwd($tablet) {
+    width: 36%;
+  }
+}
+
+.storeCardSelected ul li:nth-child(2) {
+  @include rwd($phone) {
+    width: 60%;
+  }
+}
+
+.questionContent h4 {
+  margin-top: 24px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.questionContent h4:not(:first-child) {
+  @include rwd($phone) {
+    margin-top: 32px;
+  }
+}
+
+.questionContent p {
+  margin-top: 8px;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.blogSearch {
+  display: none;
+  @include rwd($phone) {
+    display: block;
+  }
+}
+
+.blog .container ul,
+.special .container ul,
+.specialContent {
+  margin-left: 12px;
+  @include rwd($phone) {
+    margin-left: 36px;
+  }
+  @include rwd($tablet) {
+    margin-left: 0px;
+  }
+}
+
+.blog .container ul li:not(:first-child),
+.special .container ul li:not(:first-child) {
+  margin-left: 25px;
+  @include rwd($phone) {
+    margin-left: 48px;
+  }
+}
+
+.blogContent article,
+.blogContent a {
+  display: none;
+  @include rwd($phone) {
+    display: block;
+  }
+}
+
+.blog .container ul li a,
+.special .container ul li a {
+  font-size: 16px;
+  line-height: 24px;
+  @include rwd($phone) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.blog img,
+.special img {
+  cursor: pointer;
+}
+
+.blogContent li {
+  gap: 0px;
+  @include rwd($phone) {
+    gap: 24px;
+  }
+}
+
+.blog .container {
+  display: none;
+  @include rwd($phone) {
+    display: block;
+    display: flex;
+  }
+}
+
+.blogContent h3 {
+  margin-top: 8px;
+  line-height: 36px;
+  font-size: 24px;
+  color: #650300;
+  @include rwd($phone) {
+    line-height: 48px;
+    font-size: 32px;
+  }
+}
+
+.blogContent p {
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.blogContent small {
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.blogContent article {
+  margin-top: 4px;
+  color: #555555;
+  @include rwd($phone) {
     margin-top: 16px;
   }
 }
 
-.specialContent article{
-  margin-top: 8px;
-  @include rwd($small){
+.specialContent ul li article p {
+  font-weight: normal;
+}
+
+.blogContent ul li:first-child {
+  margin-top: 24px;
+  @include rwd($phone) {
+    margin-top: 40px;
+  }
+  @include rwd($tablet) {
+    margin-top: 32px;
+  }
+}
+
+.blogContent ul li:not(:first-child) {
+  margin-top: 24px;
+  @include rwd($tablet) {
+    margin-top: 60px;
+  }
+}
+
+.blogContent li img,
+.blogContent .listContent {
+  width: 100%;
+  @include rwd($phone) {
+    width: 50%;
+  }
+}
+
+// .blogContent .listContent {
+//   padding:0px 36px;
+//   }
+.blogContent ul li {
+  flex-wrap: wrap;
+  padding: 0px 25px;
+  @include rwd($phone) {
+    padding: 0px 36px;
+  }
+
+  @include rwd($phone) {
+    flex-wrap: nowrap;
+    padding: 0px;
+  }
+}
+
+.breadcrumb h6 {
+  margin-top: 16px;
+  @include rwd($small) {
+    margin-top: 8px;
+  }
+  @include rwd($tablet) {
+    margin-top: 24px;
+  }
+}
+
+.breadcrumb,
+.tags {
+  padding: 0px 12px;
+  @include rwd($phone) {
+    padding: 0px;
+  }
+}
+
+.tags {
+  font-weight: 700;
+}
+
+.special ul {
+  display: flex;
+  justify-content: space-between;
+  @include rwd($phone) {
+    justify-content: flex-start;
+  }
+}
+
+.specialContent ul li span,
+.specialContent ul li p {
+  font-weight: 700;
+}
+
+.specialContent h3 a {
+  line-height: 36px;
+  font-size: 24px;
+  @include rwd($phone) {
+    line-height: 72px;
+    font-size: 48px;
+  }
+}
+
+.specialContent ul li p {
+  line-height: 21px;
+  font-size: 16px;
+  @include rwd($phone) {
+    line-height: 36px;
+    font-size: 24px;
+  }
+}
+
+.specialContent img {
+  margin-top: 16px;
+  @include rwd($small) {
+    margin-top: 24px;
+  }
+  @include rwd($phone) {
     margin-top: 16px;
   }
-  @include rwd($phone){
+}
+
+.specialContent article {
+  margin-top: 8px;
+  @include rwd($small) {
+    margin-top: 16px;
+  }
+  @include rwd($phone) {
     margin-top: 8px;
   }
 }
 
-.tagsAside{
-  display:none;
-  @include rwd($tablet){
-    display:block;
+.tagsAside {
+  display: none;
+  @include rwd($tablet) {
+    display: block;
   }
 }
 
-.specialContent ul:first-child{
-  padding:0px 12px 0px 0px;
+.specialContent ul:first-child {
+  padding: 0px 12px 0px 0px;
   width: 100%;
-  @include rwd($phone){
-      width: 70%;
+  @include rwd($phone) {
+    width: 70%;
   }
 }
 
-.specialPrevNext{
-  display:none;
-  @include rwd($phone){
-    display:block;
-    display:flex;
+.specialPrevNext {
+  display: none;
+  @include rwd($phone) {
+    display: block;
+    display: flex;
   }
 }
 
-.indexBanner h2{
+.indexBanner h2 {
   line-height: 24px;
   font-size: 16px;
-  color:#650300;
-  @include rwd($phone){
+  color: #650300;
+  @include rwd($phone) {
     line-height: 54px;
     font-size: 36px;
   }
@@ -776,9 +775,9 @@ margin:0 auto;
 .indexBanner strong {
   line-height: 36px;
   font-size: 24px;
-  color:#650300;
-  
-  @include rwd($phone){
+  color: #650300;
+
+  @include rwd($phone) {
     line-height: 96px;
     font-size: 64px;
   }
@@ -787,101 +786,195 @@ margin:0 auto;
 .indexBanner {
   padding-top: 144px;
   padding-right: 24px;
-  @include rwd($phone){
+  @include rwd($phone) {
     padding-top: 296px;
     padding-right: 0px;
   }
 }
 
-.banner{
+.banner {
   background-image: url(../assets/images/home-header-sm.png);
-  height:396px;
-  @include rwd($phone){
+  height: 396px;
+  @include rwd($phone) {
     background-image: url(../assets/images/home-header.png);
-    height:787px;
-
+    height: 787px;
   }
 }
 
-.sectionBanner{
-  background-color: #FBF2F2;
-  height: 1150px;
-  @include rwd($phone){
-      height:720px;
+.cooperationBaner {
+  margin-top: 40px;
+  background-image: url(../assets/images/index-bg-sm.png);
+  height: 820px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include rwd($phone) {
+    background-image: url(../assets/images/index-bg.png);
+    height: 608px;
+    margin-top: 80px;
   }
-  @include rwd($web){
+}
+
+.sectionBanner {
+  background-color: #fbf2f2;
+  height: 1150px;
+  @include rwd($phone) {
+    height: 720px;
+  }
+  @include rwd($web) {
     height: 488px;
   }
-
 }
 
-.sectionIntro, .glassIntro {
+.sectionIntro,
+.glassIntro, .cooperation, .customer {
   padding-top: 40px;
-  @include rwd($phone){
+  @include rwd($phone) {
     padding-top: 80px;
   }
 }
 
-.sectionIntro h3, .glassIntro h3{
+.sectionIntro h3,
+.glassIntro h3, .cooperation h3, .customer h3 {
   line-height: 36px;
   font-size: 24px;
-  color:#650300;
-  @include rwd($phone){
+  color: #650300;
+  @include rwd($phone) {
     line-height: 72px;
     font-size: 48px;
   }
 }
 
-.glassIntro ul {
+.cooperation h3 {
+  line-height: 36px;
+  font-size: 24px;
+  color: white;
+  @include rwd($phone) {
+    line-height: 72px;
+    font-size: 48px;
+  }
+}
+
+.cooperation ul {
   margin-top: 24px;
-  flex-wrap:wrap;
   padding:0px 12px;
   @include rwd($phone){
     margin-top: 48px;
+    padding:36px;
   }
-  @include rwd($web){
-    flex-wrap:nowrap;
+  @include rwd($tablet){
     padding:0px;
   }
 }
 
-.glassIntro ul li:not(:first-child){
+.cooperation ul li{
+ width: 100%;
+ @include rwd($phone){
+  width: 50%;
+ }
+}
+
+.cooperation ul li:not(:first-child){
   margin-top: 24px;
-    @include rwd($phone){
-margin-top: 0px;
-    }
+  @include rwd($phone){
+      margin-top: 0px;
   }
+}
 
+.glassIntro ul {
+  margin-top: 24px;
+  flex-wrap: wrap;
+  padding: 0px 12px;
+  @include rwd($phone) {
+    margin-top: 48px;
+  }
+  @include rwd($web) {
+    flex-wrap: nowrap;
+    padding: 0px;
+  }
+}
 
-.glassIntro img{
+.glassIntro ul li:not(:first-child) {
+  margin-top: 24px;
+  @include rwd($phone) {
+    margin-top: 0px;
+  }
+}
+
+.glassIntro img {
   cursor: pointer;
 }
 
-.sectionBanner ul{
-  flex-wrap:wrap;
-  padding:0px 12px;
-  @include rwd($phone){
-    flex-wrap:wrap;
+.sectionBanner ul {
+  flex-wrap: wrap;
+  padding: 0px 12px;
+  @include rwd($phone) {
+    flex-wrap: wrap;
   }
-  @include rwd($web){
-    padding:0px;
-    flex-wrap:nowrap;
+  @include rwd($web) {
+    padding: 0px;
+    flex-wrap: nowrap;
   }
 }
 
-.sectionBanner ul li{
+.sectionBanner ul li {
   width: 100%;
-  @include rwd($phone){
+  @include rwd($phone) {
     width: 50%;
   }
-  @include rwd($web){
+  @include rwd($web) {
     width: 23%;
   }
 }
 
-.sectionBanner ul li img{
+.sectionBanner ul li img {
   margin-top: 32px;
-  @include rwd($tablet){
+  @include rwd($tablet) {
     margin-top: 24px;
+  }
+}
+
+
+.cardBody p:not(:first-child){
+  margin-top: 16px;
+  @include rwd($phone){
+    margin-top: 8px;
+  }
+
+}
+
+.cardBody small{
+  margin-top: 96px;
+  @include rwd($phone){
+    margin-top: 72px;
+  }
+}
+
+.customer h3{
+  margin-bottom: 24px;
+  @include rwd($phone){
+    margin-bottom: 48px;
+  }
+}
+
+.customer img{
+  cursor: pointer;
+}
+
+.customer ul {
+  flex-wrap:wrap;
+  padding:0px 12px;
+  @include rwd($tablet){
+flex-wrap:nowrap;
+padding:0px;
+  }
+}
+
+.customer ul li {
+  width: 100%;
+  // padding:0px 12px;
+  @include rwd($phone){
+    width: 50%;
   }
 }

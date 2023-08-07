@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>week3</title>
     
-    <script type="module" crossorigin src="/week3/assets/sunGlasses-fe76e5ac.js"></script>
-    <link rel="stylesheet" href="/week3/assets/sunGlasses-6678a4fd.css">
+    <script type="module" crossorigin src="/week3/assets/sunGlasses-5effd5ef.js"></script>
+    <link rel="stylesheet" href="/week3/assets/sunGlasses-9867d4ef.css">
   </head>
   <body>
     <nav class="header nav bg-color-red">
@@ -174,7 +174,7 @@
       <li class="d-flex flex-column">
         <img src="/week3/assets/home-section4-1-59894574.png" alt="section1" />
         <div
-          class="bg-color-white lh-72 font-48 text-align-center pt-24 pb-24 text-red bold"
+          class="bg-color-white lh-72 font-48 text-align-center pt-24 pb-24 text-red bold border"
         >
           DOUBLE A+
         </div>
@@ -182,7 +182,7 @@
       <li class="d-flex flex-column">
         <img src="/week3/assets/home-section4-2-daaeb8bc.png" alt="section2" />
         <div
-          class="bg-color-white lh-72 font-48 text-align-center pt-24 pb-24 text-red bold border-left"
+          class="bg-color-white lh-72 font-48 text-align-center pt-24 pb-24 text-red bold border border-left-none"
         >
           YOUTH
         </div>
@@ -195,53 +195,113 @@
   <h3 class="text-align-center bold">顧客推薦</h3>
   <ul class="d-flex gap-24">
     <li class="border cardShadow radius-4">
-      <img src="/week3/assets/home-section5-1-75717951.png" alt="customer1" width="100%"/>
+      <img
+        src="/week3/assets/home-section5-1-75717951.png"
+        alt="customer1"
+        width="100%"
+      />
       <div class="cardBody d-flex flex-column p-16">
         <div class="cardContent d-flex flex-column">
           <p>Jessy</p>
           <p>眼鏡品質優良，下次還會想來這邊購買！</p>
         </div>
-        
+
         <small class="text-gray font-14">2021/06/20</small>
       </div>
     </li>
     <li class="border cardShadow radius-4">
-      <img src="/week3/assets/home-section5-2-bf28c8b7.png" alt="customer2" width="100%"/>
+      <img
+        src="/week3/assets/home-section5-2-bf28c8b7.png"
+        alt="customer2"
+        width="100%"
+      />
       <div class="cardBody d-flex flex-column p-16">
         <div class="cardContent d-flex flex-column">
           <p>凱倫</p>
           <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
         </div>
-        
+
         <small class="text-gray font-14">2021/04/18</small>
       </div>
     </li>
     <li class="border cardShadow radius-4">
-      <img src="/week3/assets/home-section5-4-cc3480ec.png" alt="customer4" width="100%"/>
+      <img
+        src="/week3/assets/home-section5-4-cc3480ec.png"
+        alt="customer4"
+        width="100%"
+      />
       <div class="cardBody d-flex flex-column p-16">
         <div class="cardContent d-flex flex-column">
           <p>悠悠</p>
           <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
         </div>
-        
+
         <small class="text-gray font-14">2020/12/25</small>
       </div>
     </li>
     <li class="border cardShadow radius-4">
-      <img src="/week3/assets/home-section5-3-978a0702.png" alt="customer3" width="100%"/>
+      <img
+        src="/week3/assets/home-section5-3-978a0702.png"
+        alt="customer3"
+        width="100%"
+      />
       <div class="cardBody d-flex flex-column p-16">
         <div class="cardContent d-flex flex-column">
           <p>Kyuan</p>
           <p>服務很好，品質沒有任何問題，非常喜歡。</p>
         </div>
-        
+
         <small class="text-gray font-14">2020/10/31</small>
       </div>
     </li>
   </ul>
 </div>
+
+<div class="connectUs">
+  <div class="cusContainer">
+    <h3 class="text-align-center bold">聯絡我們</h3>
+    <section>
+      <h4>
+        我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+      </h4>
+    </section>
+    <div class="mt-24 inputAbout">
+      <label for="name" class="w-100 block">姓名</label>
+      <input
+        type="text"
+        placeholder="陳小明"
+        id="name"
+        class="block w-100 pt-6 pb-6 pl-12 mt-8 font-16"
+      />
+      <label for="tel" class="w-100 block mt-16">聯絡電話</label>
+      <input
+        type="tel"
+        placeholder="0912-345-678"
+        id="tel"
+        class="block w-100 pt-6 pb-6 pl-12 mt-8 font-16"
+      />
+      <label for="email" class="w-100 block mt-16">電子郵件</label>
+      <input
+        type="email"
+        placeholder="example@email.com"
+        id="email"
+        class="block w-100 pt-6 pb-6 pl-12 mt-8 font-16"
+      />
+      <label for="textarea" class="w-100 block mt-16">意見反應</label>
+      <textarea name="" id="textarea" cols="30" rows="8" class="w-100 mt-8 resize-none" ></textarea>
+      <div class="mt-16">
+        <input type="checkbox" id="checkbox"> <label for="checkbox" class="">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span>
+
+      </div>
+    </div>
+    <div class="button d-flex justify-center pb-80">
+
+      <button type="button" class="bg-color-red text-white pt-16 pb-16 text-align-center">確認送出</button>
+    </div>
+  </div>
+</div>
     
-    <footer class="bg-color-red mt-80">
+    <footer class="bg-color-red">
   <div class="container">
     <div class="footerNav d-flex justify-between align-center">
       <ul class="d-flex align-center pt-48 Navmenu">

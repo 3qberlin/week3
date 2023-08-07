@@ -815,14 +815,14 @@ margin:0 auto;
 
 }
 
-.sectionIntro {
+.sectionIntro, .glassIntro {
   padding-top: 40px;
   @include rwd($phone){
     padding-top: 80px;
   }
 }
 
-.sectionIntro h3{
+.sectionIntro h3, .glassIntro h3{
   line-height: 36px;
   font-size: 24px;
   color:#650300;
@@ -830,6 +830,31 @@ margin:0 auto;
     line-height: 72px;
     font-size: 48px;
   }
+}
+
+.glassIntro ul {
+  margin-top: 24px;
+  flex-wrap:wrap;
+  padding:0px 12px;
+  @include rwd($phone){
+    margin-top: 48px;
+  }
+  @include rwd($web){
+    flex-wrap:nowrap;
+    padding:0px;
+  }
+}
+
+.glassIntro ul li:not(:first-child){
+  margin-top: 24px;
+    @include rwd($phone){
+margin-top: 0px;
+    }
+  }
+
+
+.glassIntro img{
+  cursor: pointer;
 }
 
 .sectionBanner ul{

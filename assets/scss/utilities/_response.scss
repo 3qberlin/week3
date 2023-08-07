@@ -836,7 +836,7 @@ footer .copyright {
 }
 
 .sectionIntro h3,
-.glassIntro h3, .cooperation h3, .customer h3 {
+.glassIntro h3, .cooperation h3, .customer h3, .connectUs h3 {
   line-height: 36px;
   font-size: 24px;
   color: #650300;
@@ -977,4 +977,71 @@ padding:0px;
   @include rwd($phone){
     width: 50%;
   }
+}
+
+.connectUs{
+  background-color: #FBF2F2;
+  height: 794px;
+  margin-top: 40px;
+  @include rwd($phone){
+    height: 868px;
+    margin-top: 80px;
+  }
+  @include rwd($tablet){
+    height: 922px;
+  }
+}
+
+.connectUs h3{
+  padding-top:40px;
+  @include rwd($phone){
+    padding-top:80px;
+  }
+}
+
+.connectUs section h4{
+line-height: 24px;
+font-size: 16px;
+margin-top: 24px;
+@include rwd($tablet){
+  line-height: 30px;
+  font-size: 20px;
+  margin-top: 48px;
+}
+ 
+}
+
+.button{
+  margin-top: 24px;
+  @include rwd($phone){
+    margin-top: 48px;
+  }
+}
+
+.button button{
+  padding-left: 138px;
+  padding-right: 138px;
+  @include rwd($phone){
+    padding-left: 136px;
+    padding-right: 136px;
+  }
+  @include rwd($tablet){
+    padding-left: 176px;
+    padding-right: 176px;
+  }
+  
+}
+
+.cusContainer{
+padding:0px 12px;
+max-width: 375px;
+margin:0 auto;
+@include rwd($phone){
+  padding:0px 96px;
+  max-width: 768px;
+}
+@include rwd($web){
+  padding:0px;
+  max-width: 636px;
+}
 }
